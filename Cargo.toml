@@ -2,7 +2,16 @@
 name = "aoc2021"
 version = "0.1.0"
 edition = "2021"
+autobins = true
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+
+[lib]
+name = "aoc"
+path = "src/lib.rs"
+
+[[bin]]
+name = "day1"
+path = "src/day1/bin/main.rs"
